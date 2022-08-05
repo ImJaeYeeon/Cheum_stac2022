@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tab_home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        app:showAsAction="always"
+        android:title="홈"/>
+    <item
+        android:id="@+id/tab_map"
+        android:enabled="true"
+        android:icon="@drawable/location"
+        app:showAsAction="always"
+        android:title="지도"/>
+    <item
+        android:id="@+id/tab_kate"
+        android:enabled="true"
+        android:icon="@drawable/mark"
+        app:showAsAction="always"
+        android:title="카테고리"/>
+    <item
+        android:id="@+id/tab_my"
+        android:enabled="true"
+        android:icon="@drawable/parson"
+        app:showAsAction="always"
+        android:title="마이페이지"/>
+</menu>
