@@ -3,13 +3,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="홈"
-        android:gravity="center"/>
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="51dp"
+        android:textColor="#7C7C7C"
+        android:fontFamily="@font/noto_sans"
+        android:text="다함께 한걸음" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="오늘의 콘텐츠"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:iconifiedByDefault="false"
+        android:id="@+id/searchBar"
+        app:queryHint="궁금한 키워드를 검색해보세요!"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="175dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn1"
+            android:text="VIDEO"
+            android:backgroundTint="#E4E4E4"
+            android:textColor="#636363"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn2"
+            android:text="NEWS"
+            android:backgroundTint="#E4E4E4"
+            android:textColor="#636363"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="365dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/video"
+        android:src="@drawable/video1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="440dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="리필스테이션 1.5℃ 매장\n방문 브이로그"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="512dp"
+        android:fontFamily="@font/noto_sans"
+        android:textColor="#7C7C7C"
+        android:text="#1.5℃  #관악구" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="563dp"
+        android:textColor="#7C7C7C"
+        android:fontFamily="@font/noto_sans"
+        android:text="관악구의 리필스테이션 매장 “1.5℃” 체험기." />
 
 </FrameLayout>
