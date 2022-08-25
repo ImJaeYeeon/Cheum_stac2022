@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import net.daum.mf.map.api.MapView;
+
+import java.util.Map;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,6 +52,7 @@ public class MapFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -58,7 +62,15 @@ public class MapFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View v = inflater.inflate(R.layout.fragment_map, container, false);
+        MapView mapView = new MapView(getActivity());
+        ViewGroup mapViewContainer = (ViewGroup) v.findViewById(R.id.map_view);
+        mapViewContainer.addView(mapView);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_map, container, false);
+        return v;
+
     }
+
 }
