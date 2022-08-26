@@ -5,8 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home_news">
-
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,12 +58,13 @@
             android:backgroundTint="#E4E4E4"
             android:textColor="#636363"/>
     </LinearLayout>
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="40dp">
+        android:layout_gravity="top">
         <TableRow>
             <ImageView
                 android:layout_width="0dp"
@@ -125,8 +128,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="100dp">
+        android:layout_gravity="center">
         <TableRow>
             <ImageView
                 android:layout_width="0dp"
@@ -249,5 +251,6 @@
 
         </TableRow>
     </TableLayout>
-
+</ScrollView>
+    </LinearLayout>
 </FrameLayout>
