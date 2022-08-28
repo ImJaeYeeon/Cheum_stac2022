@@ -9,248 +9,232 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="51dp"
-        android:textColor="#7C7C7C"
-        android:fontFamily="@font/noto_sans"
-        android:text="다함께 한걸음" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="75dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="오늘의 콘텐츠"
-        android:textColor="#000000"
-        android:textSize="24dp" />
-
-    <androidx.appcompat.widget.SearchView
-        android:layout_width="390dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        app:iconifiedByDefault="false"
-        android:id="@+id/searchBar"
-        app:queryHint="궁금한 키워드를 검색해보세요!"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginRight="21dp"
-        android:layout_marginTop="175dp">
-        <Button
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/btn1"
-            android:text="VIDEO"
-            android:backgroundTint="#E4E4E4"
-            android:textColor="#636363"/>
-        <Button
-            android:layout_width="0dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="51dp"
+            android:textColor="#7C7C7C"
+            android:fontFamily="@font/noto_sans"
+            android:text="다함께 한걸음" />
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/btn2"
-            android:text="NEWS"
-            android:backgroundTint="#E4E4E4"
-            android:textColor="#636363"/>
-    </LinearLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top">
-        <TableRow>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:src="@drawable/news1"
-                android:id="@+id/news1"/>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:src="@drawable/news1"
-                android:id="@+id/news2"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="BEST [에디터픽]"
-                android:textColor="#000000"
-                android:textSize="12dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="6dp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="BEST [에디터픽]"
-                android:textColor="#000000"
-                android:textSize="12dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="6dp"/>
+            android:layout_marginLeft="21dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="오늘의 콘텐츠"
+            android:textColor="#000000"
+            android:textSize="24dp" />
 
-        </TableRow>
-        <TableRow>
-            <TextView
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="15dp"
+            app:iconifiedByDefault="false"
+            android:id="@+id/searchBar"
+            app:queryHint="궁금한 키워드를 검색해보세요!"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="13dp">
+            <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="샴푸 리필스테이션 가이드"
-                android:textColor="#000000"
-                android:textSize="14dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"/>
-            <TextView
+                android:id="@+id/btn1"
+                android:text="VIDEO"
+                android:backgroundTint="#E4E4E4"
+                android:textColor="#636363"/>
+            <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="“시리얼도 리필이 되나요?”"
-                android:textColor="#000000"
-                android:textSize="14dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"/>
-
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <TableRow>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:src="@drawable/news1"
-                android:id="@+id/news3"/>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:src="@drawable/news1"
-                android:id="@+id/news4"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="BEST [에디터픽]"
-                android:textColor="#000000"
-                android:textSize="12dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="6dp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="BEST [에디터픽]"
-                android:textColor="#000000"
-                android:textSize="12dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="6dp"/>
-
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="샴푸 리필스테이션 가이드"
-                android:textColor="#000000"
-                android:textSize="14dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="“시리얼도 리필이 되나요?”"
-                android:textColor="#000000"
-                android:textSize="14dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"/>
-
-        </TableRow>
-    </TableLayout>
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-        <TableRow>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:src="@drawable/news1"
-                android:id="@+id/news5"/>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:src="@drawable/news1"
-                android:id="@+id/news6"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="BEST [에디터픽]"
-                android:textColor="#000000"
-                android:textSize="12dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="6dp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="BEST [에디터픽]"
-                android:textColor="#000000"
-                android:textSize="12dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="6dp"/>
-
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="샴푸 리필스테이션 가이드"
-                android:textColor="#000000"
-                android:textSize="14dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="“시리얼도 리필이 되나요?”"
-                android:textColor="#000000"
-                android:textSize="14dp"
-                android:fontFamily="@font/noto_sans"
-                android:layout_marginLeft="25dp"/>
-
-        </TableRow>
-    </TableLayout>
-</ScrollView>
+                android:id="@+id/btn2"
+                android:text="NEWS"
+                android:backgroundTint="#E4E4E4"
+                android:textColor="#636363"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_marginTop="23dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/news1"
+                        android:id="@+id/news1"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/news1"
+                        android:id="@+id/news2"/>
+                </TableRow>
+                <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BEST [에디터픽]"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="6dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BEST [에디터픽]"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="6dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="샴푸 리필스테이션 가이드"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="“시리얼도 리필이 되나요?”"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="17dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/news1"
+                        android:id="@+id/news3"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/news1"
+                        android:id="@+id/news4"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BEST [에디터픽]"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="6dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BEST [에디터픽]"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="6dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="샴푸 리필스테이션 가이드"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="“시리얼도 리필이 되나요?”"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="17dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/news1"
+                        android:id="@+id/news5"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/news1"
+                        android:id="@+id/news6"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BEST [에디터픽]"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="6dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BEST [에디터픽]"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="6dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="샴푸 리필스테이션 가이드"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="“시리얼도 리필이 되나요?”"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_marginLeft="25dp"/>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
     </LinearLayout>
 </FrameLayout>
