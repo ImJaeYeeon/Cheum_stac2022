@@ -10,15 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frameLayout"/>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btn_navi_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_navi_menu"
         android:layout_alignParentBottom="true"
         android:background="#ffffff"
         app:itemIconTint="#000000"
         app:itemTextColor="#000000"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/btn_navi_menu"/>
+        app:menu="@menu/btn_navi_menu" />
 
 </RelativeLayout>

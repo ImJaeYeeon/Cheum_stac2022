@@ -60,7 +60,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="580dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="23dp">
 
         <TableLayout
@@ -93,7 +93,11 @@
                 android:text="#1.5℃  #관악구"
                 android:textColor="#7C7C7C"
                 android:textSize="12dp" />
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="8dp"/>
             <ImageView
                 android:id="@+id/video2"
                 android:layout_width="365dp"
