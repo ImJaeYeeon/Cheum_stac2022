@@ -5,7 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home_video">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,21 +17,20 @@
         android:textColor="#7C7C7C"
         android:fontFamily="@font/noto_sans"
         android:text="다함께 한걸음" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="21dp"
-        android:layout_marginTop="75dp"
         android:fontFamily="@font/noto_sans_bold"
         android:text="오늘의 콘텐츠"
         android:textColor="#000000"
         android:textSize="24dp" />
 
     <androidx.appcompat.widget.SearchView
-        android:layout_width="390dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="15dp"
         app:iconifiedByDefault="false"
         android:id="@+id/searchBar"
         app:queryHint="궁금한 키워드를 검색해보세요!"/>
@@ -37,7 +39,7 @@
         android:layout_height="41dp"
         android:layout_marginLeft="21dp"
         android:layout_marginRight="21dp"
-        android:layout_marginTop="175dp">
+        android:layout_marginTop="13dp">
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -56,57 +58,74 @@
             android:textColor="#636363"/>
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="23dp">
 
-        <ImageView
-            android:layout_width="365dp"
-            android:layout_height="180dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="40dp"
-            android:id="@+id/video"
-            android:src="@drawable/video1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="21dp"
-            android:layout_marginTop="430dp"
-            android:fontFamily="@font/noto_sans_bold"
-            android:text="리필스테이션 1.5℃ 매장 방문 브이로그"
-            android:textColor="#000000"
-            android:textSize="16dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="21dp"
-            android:layout_marginTop="455dp"
-            android:textSize="12dp"
-            android:fontFamily="@font/noto_sans"
-            android:textColor="#7C7C7C"
-            android:text="#1.5℃  #관악구" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="365dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="230dp"
-        android:id="@+id/video2"
-        android:src="@drawable/video1"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="700dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="리필스테이션 1.5℃ 매장 방문 브이로그"
-        android:textColor="#000000"
-        android:textSize="16dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="730dp"
-        android:textSize="12dp"
-        android:fontFamily="@font/noto_sans"
-        android:textColor="#7C7C7C"
-        android:text="#1.5℃  #관악구" />
+            <ImageView
+                android:id="@+id/video1"
+                android:layout_width="365dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:src="@drawable/video1" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:text="리필스테이션 1.5℃ 매장 방문 브이로그"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="#1.5℃  #관악구"
+                android:textColor="#7C7C7C"
+                android:textSize="12dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="8dp"/>
+            <ImageView
+                android:id="@+id/video2"
+                android:layout_width="365dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/video1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:text="리필스테이션 1.5℃ 매장 방문 브이로그"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="#1.5℃  #관악구"
+                android:textColor="#7C7C7C"
+                android:textSize="12dp" />
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
 </FrameLayout>

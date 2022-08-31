@@ -7,15 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link KategorieFragment#newInstance} factory method to
+ * Use the {@link home_news_page#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class KategorieFragment extends Fragment {
+public class home_news_page extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +24,7 @@ public class KategorieFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public KategorieFragment() {
+    public home_news_page() {
         // Required empty public constructor
     }
 
@@ -36,11 +34,11 @@ public class KategorieFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment KategorieFragment.
+     * @return A new instance of fragment home_news_page.
      */
     // TODO: Rename and change types and number of parameters
-    public static KategorieFragment newInstance(String param1, String param2) {
-        KategorieFragment fragment = new KategorieFragment();
+    public static home_news_page newInstance(String param1, String param2) {
+        home_news_page fragment = new home_news_page();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +59,6 @@ public class KategorieFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kategorie, container, false);
+        return inflater.inflate(R.layout.fragment_home_news_page, container, false);
     }
 }
