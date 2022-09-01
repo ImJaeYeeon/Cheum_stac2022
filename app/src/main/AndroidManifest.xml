@@ -14,7 +14,19 @@
         android:theme="@style/LightTheme"
         tools:targetApi="31">
         <activity
-            android:name=".home_tab"
+            android:name=".home_news"
+            android:exported="false" />
+        <activity
+            android:name=".home_video"
+            android:exported="false" />
+        <activity
+            android:name=".home_news_page"
+            android:exported="false" />
+        <activity
+            android:name=".kategorie_detail"
+            android:exported="false" />
+        <activity
+            android:name=".kategorie_product"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
