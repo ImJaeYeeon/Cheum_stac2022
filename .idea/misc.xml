@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/circle_background.xml" value="0.2835" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/rectangle.xml" value="0.2835" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/round_backgroud.xml" value="0.2835" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/shadow.xml" value="0.2835" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_home_tab.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_my_page_customer.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_my_page_likes.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home_news.xml" value="0.36216779572694113" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home_news_page.xml" value="0.3619791666666667" />
@@ -16,7 +20,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_kategorie_main.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_kategorie_product.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_map.xml" value="0.1" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_my_page.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_my_page.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/home.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/home_fragment_container.xml" value="0.3609375" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/menu/btn_navi_menu.xml" value="0.1" />

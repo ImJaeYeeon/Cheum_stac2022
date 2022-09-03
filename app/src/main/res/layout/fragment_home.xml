@@ -43,7 +43,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/btn1"
+            android:id="@+id/videoBtn"
             android:text="VIDEO"
             android:backgroundTint="#E4E4E4"
             android:textColor="#636363"/>
@@ -51,7 +51,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/btn2"
+            android:id="@+id/newsBtn"
             android:text="NEWS"
             android:backgroundTint="#E4E4E4"
             android:textColor="#636363"/>

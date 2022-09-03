@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".kategorie_product">
 
     <LinearLayout
@@ -148,4 +149,15 @@
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btn_navi_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/btn_navi_menu" />
 </FrameLayout>

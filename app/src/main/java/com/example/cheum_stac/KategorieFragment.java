@@ -1,5 +1,6 @@
 package com.example.cheum_stac;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 /**
@@ -25,6 +28,8 @@ public class KategorieFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Button hair;
+    private ImageView news1;
 
     public KategorieFragment() {
         // Required empty public constructor
@@ -61,6 +66,24 @@ public class KategorieFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kategorie, container, false);
+        View view = inflater.inflate(R.layout.fragment_kategorie, container, false);
+        hair = (Button) view.findViewById(R.id.hair);
+        news1 = (ImageView) view.findViewById(R.id.news1);
+
+        hair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),kategorie_detail.class);
+                startActivity(intent);
+            }
+        });
+        news1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),kategorie_product.class);
+                startActivity(intent);
+            }
+        });
+        return view;
     }
 }

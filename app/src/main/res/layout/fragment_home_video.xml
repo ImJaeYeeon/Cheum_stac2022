@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/btn1"
+            android:id="@+id/video_videoBtn"
             android:text="VIDEO"
             android:backgroundTint="#E4E4E4"
             android:textColor="#636363"/>
@@ -52,7 +52,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/btn2"
+            android:id="@+id/video_newsBtn"
             android:text="NEWS"
             android:backgroundTint="#E4E4E4"
             android:textColor="#636363"/>
@@ -128,4 +128,15 @@
         </TableLayout>
     </ScrollView>
 </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btn_navi_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/btn_navi_menu" />
 </FrameLayout>
