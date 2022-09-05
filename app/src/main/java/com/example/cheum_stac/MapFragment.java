@@ -2,11 +2,17 @@ package com.example.cheum_stac;
 
 import android.os.Bundle;
 
+import androidx.annotation.ColorInt;
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import net.daum.mf.map.api.MapView;
 
@@ -62,9 +68,37 @@ public class MapFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_map, container, false);
+
+        //지도 띄우기
         MapView mapView = new MapView(getActivity());
         ViewGroup mapViewContainer = (ViewGroup) v.findViewById(R.id.map_view);
         mapViewContainer.addView(mapView);
+
+        //검색창
+        EditText editSearch = v.findViewById(R.id.edit_search_text);
+        ImageView imgSearch = v.findViewById(R.id.img_search_icon);
+
+        editSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent KeyEvent) {
+                String searchData = textView.getText().toString();
+                if (searchData.isEmpty()) {
+                    editSearch.setText("흠");
+//                    Toast.makeText(getActivity(), "정보를 입력해주세요", Toast.LENGTH_SHORT).show();
+                    textView.clearFocus();
+                    textView.setFocusable(false);
+                    textView.setFocusableInTouchMode(true);
+                    textView.setFocusable(true);
+
+                    return true;
+                }
+                switch (i){
+                    case android.view.KeyEvent.KEYCODE_ENTER:
+                        return true;
+                }
+                return false;
+            }
+        });
         return v;
     }
 }
