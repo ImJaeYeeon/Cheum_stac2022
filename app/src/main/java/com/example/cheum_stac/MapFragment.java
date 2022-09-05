@@ -1,8 +1,10 @@
 package com.example.cheum_stac;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.ColorInt;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.view.KeyEvent;
@@ -10,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -75,30 +78,19 @@ public class MapFragment extends Fragment {
         mapViewContainer.addView(mapView);
 
         //검색창
+        FrameLayout layoutMap = v.findViewById(R.id.layout_map_screen);
         EditText editSearch = v.findViewById(R.id.edit_search_text);
         ImageView imgSearch = v.findViewById(R.id.img_search_icon);
+        Toolbar tool = v.findViewById(R.id.toolbar_search);
 
-        editSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        editSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public boolean onEditorAction(TextView textView, int i, KeyEvent KeyEvent) {
-                String searchData = textView.getText().toString();
-                if (searchData.isEmpty()) {
-                    editSearch.setText("흠");
-//                    Toast.makeText(getActivity(), "정보를 입력해주세요", Toast.LENGTH_SHORT).show();
-                    textView.clearFocus();
-                    textView.setFocusable(false);
-                    textView.setFocusableInTouchMode(true);
-                    textView.setFocusable(true);
-
-                    return true;
-                }
-                switch (i){
-                    case android.view.KeyEvent.KEYCODE_ENTER:
-                        return true;
-                }
-                return false;
+            public void onFocusChange(View v, boolean hasFocus) {
+                Intent intent = new Intent(getContext(), MapFavorites.class);
+                startActivity(intent);
             }
         });
+
         return v;
     }
 }
