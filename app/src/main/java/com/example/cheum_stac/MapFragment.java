@@ -1,12 +1,23 @@
 package com.example.cheum_stac;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.ColorInt;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import net.daum.mf.map.api.MapView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +70,27 @@ public class MapFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_map, container, false);
+        View v = inflater.inflate(R.layout.fragment_map, container, false);
+
+        //지도 띄우기
+        MapView mapView = new MapView(getActivity());
+        ViewGroup mapViewContainer = (ViewGroup) v.findViewById(R.id.map_view);
+        mapViewContainer.addView(mapView);
+
+        //검색창
+        FrameLayout layoutMap = v.findViewById(R.id.layout_map_screen);
+        EditText editSearch = v.findViewById(R.id.edit_search_text);
+        ImageView imgSearch = v.findViewById(R.id.img_search_icon);
+        Toolbar tool = v.findViewById(R.id.toolbar_search);
+
+        editSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Intent intent = new Intent(getContext(), MapFavorites.class);
+                startActivity(intent);
+            }
+        });
+
+        return v;
     }
 }
