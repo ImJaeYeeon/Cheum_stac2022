@@ -5,16 +5,49 @@
     android:layout_height="match_parent"
     tools:context=".MapFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="테스트"
-        android:gravity="center"/>
-
     <RelativeLayout
         android:id="@+id/map_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/layout_mapscreen_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="20dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:background="@drawable/map_search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="장소, 브랜드, 상품 종류 검색"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/map_search_icon"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="right"
+                />
+        </FrameLayout>
+
+
+    </FrameLayout>
 
 </FrameLayout>
