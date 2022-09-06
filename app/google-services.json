@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "561625479133",
+    "project_id": "cheum-2a7e3",
+    "storage_bucket": "cheum-2a7e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561625479133:android:909e7d69cb38cb1627e834",
+        "android_client_info": {
+          "package_name": "com.example.cheum_stac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561625479133-tcn319r71n8om439ecb94eo2g26cv6rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cheum_stac",
+            "certificate_hash": "1540fb5c5bffc8955ba3ec98513791623230d0b5"
+          }
+        },
+        {
+          "client_id": "561625479133-0c5mualek3k90hkpe1phtl87ct062b74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGllUfE4go3kTuR6a_CqREAWbJpzpmwOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561625479133-0c5mualek3k90hkpe1phtl87ct062b74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
