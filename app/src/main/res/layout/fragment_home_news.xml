@@ -26,14 +26,48 @@
             android:textColor="#000000"
             android:textSize="24dp" />
 
-        <androidx.appcompat.widget.SearchView
+        <FrameLayout
+            android:id="@+id/layout_search_screen"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="19dp"
-            android:layout_marginRight="15dp"
-            app:iconifiedByDefault="false"
-            android:id="@+id/searchBar"
-            app:queryHint="궁금한 키워드를 검색해보세요!"/>
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingHorizontal="20dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_search"
+                android:background="@drawable/map_search_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@+id/field_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edit_search_text"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:singleLine="true"
+                    android:hint="장소, 브랜드, 상품 종류 검색"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/transparent" />
+
+                <ImageView
+                    android:id="@+id/img_search_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/map_search_icon"
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_gravity="right"
+                    />
+            </FrameLayout>
+
+        </FrameLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="41dp"
