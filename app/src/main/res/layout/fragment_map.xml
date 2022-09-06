@@ -9,12 +9,74 @@
         android:id="@+id/layout_map_screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <!--지도-->
         <RelativeLayout
             android:id="@+id/map_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </FrameLayout>
 
+    <!--즐찾-->
+    <LinearLayout
+        android:id="@+id/layout_list_favor"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <!--검색창 밑선-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#52000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="23dp"
+            android:paddingBottom="20dp"
+            android:textSize="16dp"
+            android:textFontWeight="500"
+            android:textColor="@color/black"
+            android:text="즐겨찾기"/>
+
+
+        <!--반복되며 추가되어야하는 Layout-->
+        <LinearLayout
+            android:id="@+id/favor_store_group"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="23dp"
+                android:paddingBottom="12dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/map_favor_circle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:text="가게 이름"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#52000000"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--검색창-->
     <FrameLayout
         android:id="@+id/layout_search_screen"
         android:layout_width="match_parent"
@@ -46,9 +108,9 @@
 
             <ImageView
                 android:id="@+id/img_search_icon"
+                android:src="@drawable/map_search_icon"
                 android:layout_width="21dp"
                 android:layout_height="21dp"
-                android:src="@drawable/map_search_icon"
                 android:background="@android:color/transparent"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="14dp"

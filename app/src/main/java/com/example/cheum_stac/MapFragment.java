@@ -1,6 +1,7 @@
 package com.example.cheum_stac;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.ColorInt;
@@ -14,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -79,6 +81,8 @@ public class MapFragment extends Fragment {
 
         //검색창
         FrameLayout layoutMap = v.findViewById(R.id.layout_map_screen);
+        LinearLayout layoutFavor = v.findViewById(R.id.layout_list_favor);
+
         EditText editSearch = v.findViewById(R.id.edit_search_text);
         ImageView imgSearch = v.findViewById(R.id.img_search_icon);
         Toolbar tool = v.findViewById(R.id.toolbar_search);
@@ -86,8 +90,19 @@ public class MapFragment extends Fragment {
         editSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                Intent intent = new Intent(getContext(), MapFavorites.class);
-                startActivity(intent);
+                layoutMap.setVisibility(View.INVISIBLE);
+                layoutFavor.setVisibility(View.VISIBLE);
+            }
+        });
+
+        Intent intent;
+//        intent = new Intent(MapFragment.this, MapSearch.class);
+        editSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                // 입력 후 완료 눌렀을때
+//                startActivity(intent);
+                return false;
             }
         });
 
