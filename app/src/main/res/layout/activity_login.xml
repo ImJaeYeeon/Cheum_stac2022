@@ -27,14 +27,13 @@
             android:textSize="12dp"/>
 
         <EditText
-            android:id="@+id/edit_login_id"
+            android:id="@+id/edit_login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_marginTop="8dp"
             android:backgroundTint="#52000000"
-            android:hint="아이디를 입력해 주세요\n"
-            android:lineSpacingExtra="2dp"
+            android:hint="이메일을 입력해 주세요\n"
+            android:lineSpacingExtra="4dp"
             android:minHeight="48dp"
             android:singleLine="true"
             android:textColor="@color/black"
@@ -53,7 +52,8 @@
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="#33000000"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:inputType="textPassword"/>
 
         <Button
             android:id="@+id/loginBtn"
@@ -67,4 +67,5 @@
             android:text="계속하기"
             android:textColor="#ffffff"
             android:textSize="16dp" />
+
 </LinearLayout>
