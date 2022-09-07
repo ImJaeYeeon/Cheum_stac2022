@@ -74,7 +74,7 @@
                 android:elevation="50dp"
                 android:background="@drawable/round_backgroud"
                 android:backgroundTint="#D3D3D3"
-                android:id="@+id/roginBtn"
+                android:id="@+id/loginBtn"
                 android:text="로그인" />
         </LinearLayout>
     </LinearLayout>
