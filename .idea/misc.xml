@@ -3,31 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Cheum_stac2022/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
-        <entry key="..\:/Cheum_stac2022/app/src/main/res/layout/network_security_config.xml" value="0.1" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/drawable/circle_background.xml" value="0.158" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/drawable/ic_baseline_chevron_right_24.xml" value="0.158" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/drawable/login_btn_active.xml" value="0.158" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/drawable/rectangle.xml" value="0.158" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/drawable/round_backgroud.xml" value="0.158" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/drawable/shadow.xml" value="0.144" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/activity_map_favorites.xml" value="0.1" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/activity_map_search.xml" value="0.1" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/activity_my_page_customer.xml" value="0.22" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/activity_my_page_likes.xml" value="0.3359375" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/fragment_home.xml" value="0.3359375" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/fragment_home_news.xml" value="0.2" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/fragment_home_news_page.xml" value="0.3359375" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/fragment_kategorie.xml" value="0.3359375" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/fragment_map.xml" value="0.1" />
-        <entry key="..\:/Users/User/StudioProjects/Cheum_stac2022/app/src/main/res/layout/fragment_my_page.xml" value="0.25" />
+        <entry key="..\:/Cheum_stac2022/app/src/main/res/layout/activity_map_favorites.xml" value="0.25" />
+        <entry key="..\:/Cheum_stac2022/app/src/main/res/layout/activity_map_search.xml" value="0.1" />
+        <entry key="..\:/Cheum_stac2022/app/src/main/res/layout/map_search_listview.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/circle_background.xml" value="0.2835" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/rectangle.xml" value="0.2835" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/round_backgroud.xml" value="0.2835" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/drawable/shadow.xml" value="0.2835" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_home_tab.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_my_page_customer.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/activity_my_page_likes.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home_news.xml" value="0.36216779572694113" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home_news_page.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_home_video.xml" value="0.25" />
@@ -35,8 +22,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_kategorie_detail.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_kategorie_main.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_kategorie_product.xml" value="0.33" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_map.xml" value="0.1" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_my_page.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_map.xml" value="0.16" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/fragment_my_page.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/home.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/layout/home_fragment_container.xml" value="0.3609375" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Cheum_STAC/app/src/main/res/menu/btn_navi_menu.xml" value="0.1" />
